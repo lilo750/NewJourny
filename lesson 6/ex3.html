@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Variables</title>
+  </head>
+  <body>
+    <button
+      onclick="
+      if (count > 10) alert('the cart is full')
+      else console.log(`Cart Quantity: ${count}`);
+        "
+    >
+      show Quantity
+    </button>
+    <button
+      onclick="
+        if (count > 10) {
+            alert('the cart is full');
+        } else {
+            console.log(console.log(`Cart Quantity: ${count}`));
+            count += 1;
+        }
+        "
+    >
+      add to cart
+    </button>
+    <button
+      onclick="
+    if (count > 10) {
+        alert('the cart is full')
+    } else {
+        console.log(console.log(`Cart Quantity: ${count}`));
+        count += 2;
+    }
+    "
+    >
+      +2
+    </button>
+    <button
+      onclick="
+    if (count > 10) {
+        alert('the cart is full')
+    } else  {
+        console.log(console.log(`Cart Quantity: ${count}`));
+        count += 3;
+    }
+    "
+    >
+      +3
+    </button>
+    <button
+      onclick="
+     if (count < 0)
+        alert('not enough items in the cart')
+     else  {
+         console.log(console.log(`Cart Quantity: ${count}`));
+        count -= 3;
+    }
+    "
+    >
+      -2
+    </button>
+    <button
+      onclick="
+     if (count < 0)
+        alert('not enough items in the cart')
+     else  {
+         console.log(console.log(`Cart Quantity: ${count}`));
+        count -= 3;
+    }
+    "
+    >
+      -3
+    </button>
+    <button
+      onclick="
+        console.log('Cart was reset.');
+        count = 0;
+    "
+    >
+      reset cart
+    </button>
+  </body>
+  <script>
+    let count = 0;
+  </script>
+</html>

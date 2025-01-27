@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors Game</h1>
+    <button
+      onclick="
+        // logic behind random computer choose
+        const RandomNum = Math.random();
+        let computerChoose = '';
+        let gameResult = '';
+
+        if (RandomNum >= 0 && RandomNum < 1 / 3) {
+          computerChoose = 'rock';
+        }
+        else if (RandomNum >= 1 / 3 && RandomNum < 2 / 3) {
+          computerChoose = 'paper';
+        }
+        else if (RandomNum >= 2 / 3 && RandomNum < 1) {
+          computerChoose = 'scissors';
+        }
+
+        // logic behind game result
+
+        if (computerChoose === 'rock') {
+          gameResult = 'tie';
+        } else if (computerChoose === 'paper') {
+          gameResult = 'lost';
+        } else if (computerChoose === 'scissors') {
+          gameResult = 'win';
+        }
+
+        // displaying step
+        alert(`you picked rock, computer picked ${computerChoose}, you ${gameResult}`);
+    "
+    >
+      Rock
+    </button>
+    <button
+      onclick="
+      // logic behind random computer choose
+        const RandomNum = Math.random();
+        let computerChoose = '';
+        let gameResult = '';
+
+        if (RandomNum >= 0 && RandomNum < 1 / 3) {
+          computerChoose = 'rock';
+        }
+        else if (RandomNum >= 1 / 3 && RandomNum < 2 / 3) {
+          computerChoose = 'paper';
+        }
+        else if (RandomNum >= 2 / 3 && RandomNum < 1) {
+          computerChoose = 'scissors';
+        }
+
+        // logic behind game result
+
+        if (computerChoose === 'rock') {
+          gameResult = 'win';
+        } else if (computerChoose === 'paper') {
+          gameResult = 'tie';
+        } else if (computerChoose === 'scissors') {
+          gameResult = 'lose';
+        }
+
+        // displaying step
+        alert(`you picked Paper, computer picked ${computerChoose}, you ${gameResult}`);
+    "
+    >
+      Paper
+    </button>
+    <button
+      onclick="
+      // logic behind random computer choose
+        const RandomNum = Math.random();
+        let computerChoose = '';
+        let gameResult = '';
+
+        if (RandomNum >= 0 && RandomNum < 1 / 3) {
+          computerChoose = 'rock';
+        }
+        else if (RandomNum >= 1 / 3 && RandomNum < 2 / 3) {
+          computerChoose = 'paper';
+        }
+        else if (RandomNum >= 2 / 3 && RandomNum < 1) {
+          computerChoose = 'scissors';
+        }
+
+        // logic behind game result
+
+        if (computerChoose === 'rock') {
+          gameResult = 'lost';
+        } else if (computerChoose === 'paper') {
+          gameResult = 'win';
+        } else if (computerChoose === 'scissors') {
+          gameResult = 'tie';
+        }
+
+        // displaying step
+        alert(`you picked scissors, computer picked ${computerChoose}, you ${gameResult}`);
+    "
+    >
+      Scissors
+    </button>
+    <script>
+      /* falsy value = false - 0 - '' - undefined - null
+
+      shortcuts of conditions: ternary operator ? - guard operator && - default operator ||
+      */
+      const name = 'Khaled';
+
+      // guard operator
+      const result = true && 'incase of true or truthy';
+      // console.log(result);
+
+      // ternary operator
+      const resultOfTernary = true
+        ? 'condition is true or truthy'
+        : 'condition is false or falsy';
+
+      // console.log(resultOfTernary);
+    </script>
+  </body>
+</html>
